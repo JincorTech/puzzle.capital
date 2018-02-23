@@ -2,6 +2,10 @@
   width: 1140px;
   margin: 0 auto;
   position: relative;
+
+  @media only screen and (max-width: 1200px) {
+    width: calc(100% - 100px);
+  }
 }
 
 .aside {
@@ -9,10 +13,23 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media only screen and (max-width: 1200px) {
+    width: 280px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+    position: static;
+  }
 }
 
 .fix {
   position: fixed;
+
+  @media only screen and (max-width: 960px) {
+    position: static;
+  }
 }
 
 .main {
@@ -20,4 +37,17 @@
   margin-left: 340px;
   padding: 0 150px;
   min-height: calc(100vh - 50px);
+
+  @media only screen and (max-width: 1200px) {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 50px - 120px);
+  }
 }
