@@ -1,5 +1,5 @@
 import { from } from 'seamless-immutable';
-import { createReducer, createAction } from '../../../utils/actions';
+import { createReducer, createAction } from '../../utils/actions';
 
 /**
  * Constants

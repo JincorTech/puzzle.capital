@@ -1,7 +1,7 @@
 import { all, fork } from 'redux-saga/effects';
 import { formActionSaga } from 'redux-form-saga';
 
-import appSaga from './app/app';
+import appSaga from './appSaga';
 
 export default function* () {
   yield all([
