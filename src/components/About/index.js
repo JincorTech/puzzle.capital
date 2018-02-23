@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => (<div>About</div>);
+import s from './styles.css';
+
+export default () => (<div className={s.test}>About</div>);

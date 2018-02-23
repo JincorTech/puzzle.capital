@@ -4,6 +4,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import namedRoutes from '../../namedRoutes';
 
 import Nav from '../Nav';
+import Footer from '../Footer';
 import About from '../About';
 import Strategy from '../Strategy';
 import Management from '../Management';
@@ -15,9 +16,11 @@ import s from './styles.css';
 
 const App = () => (
   <div className={s.container}>
-    <div>
+    <div className={s.content}>
       <aside className={s.aside}>
-        <Nav/>
+        <div className={s.fix}>
+          <Nav/>
+        </div>
       </aside>
       <main className={s.main}>
         <Switch>
@@ -30,7 +33,9 @@ const App = () => (
         </Switch>
       </main>
     </div>
-    <div className={s.footer}/>
+    <div className={s.footer}>
+      <Footer/>
+    </div>
   </div>
 );
 

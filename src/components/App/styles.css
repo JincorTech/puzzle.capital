@@ -1,4 +1,23 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+  position: relative;
+}
+
+.aside {
+  width: 340px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fix {
+  position: fixed;
+}
+
+.main {
+  width: 800px;
+  margin-left: 340px;
+  padding: 0 150px;
+  min-height: calc(100vh - 50px);
 }
