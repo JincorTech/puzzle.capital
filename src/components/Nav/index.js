@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { namedRoutes } from '../../../routes';
+import { namedRoutes } from '../../routes';
 
 export default () => (
   <nav>

@@ -1,17 +1,14 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import App from './containers/app/App';
-import AppWrapper from './containers/app/AppWrapper';
+import App from './components/App';
 
 export const namedRoutes = {
-  app: '/app',
-  dashboard: '/app/dashboard',
-  settings: '/app/settings'
+  app: '/',
+  dashboard: '/dashboard',
+  settings: '/settings'
 };
 
 export default (
-  <App>
-    <Route path={namedRoutes.app} component={AppWrapper}/>
-  </App>
+  <Route path={namedRoutes.app} component={App}/>
 );
