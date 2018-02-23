@@ -1,0 +1,10 @@
+.container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 35px;
+  color: #ccc;
+  padding: 45px 0 30px;
+}

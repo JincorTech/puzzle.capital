@@ -1,0 +1,45 @@
+.wrapper {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+  margin-bottom: 5px;
+
+  & > span {
+    color: #ed4853;
+    font-size: 16px;
+  }
+
+  &.invalid {
+    color: #ed4853;
+  }
+}
+
+.input {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  max-height: 450px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ccc;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 1px solid #666;
+  outline: none;
+  transition: 0.1s linear all;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #ccc;
+  }
+
+  &.invalid {
+    border: 1px solid #ed4853;
+  }
+}

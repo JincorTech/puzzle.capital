@@ -1,0 +1,43 @@
+import React from 'react';
+import classNames from 'classnames/bind';
+import s from './styles.css';
+
+const cx = classNames.bind(s);
+
+const Textarea = (props) => {
+  const {
+    meta,
+    label,
+    required,
+    ...restProps
+  } = props;
+
+  const {
+    active,
+    visited,
+    invalid
+  } = meta;
+
+  const isInvalid = () => {
+    if (!active && invalid && visited) return true;
+    if (!invalid) return false;
+
+    return null;
+  };
+
+  const inputClassName = cx(s.input, isInvalid() ? s.invalid : null);
+  const labelClassName = cx(s.label, isInvalid() ? s.invalid : null);
+
+  return (
+    <div className={s.wrapper}>
+      {label
+        ? <label className={labelClassName}>{label}{required ? <span> *</span> : null}</label>
+        : null}
+      <textarea
+        className={inputClassName}
+        {...restProps}/>
+    </div>
+  );
+};
+
+export default Textarea;
