@@ -8,8 +8,9 @@ body {
   height: 100%;
   font-family: 'Roboto';
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  color: #333;
+  color: #ccc;
+  background-color: #222;
 }

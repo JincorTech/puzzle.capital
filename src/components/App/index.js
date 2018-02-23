@@ -7,8 +7,10 @@ import Nav from '../Nav';
 import Dashboard from '../Dashboard';
 import Settings from '../Settings';
 
+import s from './styles.css';
+
 const App = () => (
-  <div className="app">
+  <div className={s.layout}>
     <Nav/>
     <Switch>
       <Route exact path={namedRoutes.dashboard} component={Dashboard}/>
