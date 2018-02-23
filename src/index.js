@@ -9,16 +9,16 @@ import './assets/main.css';
 import './assets/fonts/Roboto/stylesheet.css';
 
 import configureStore, { history } from './redux/configureStore';
-import routes from './routes';
+import App from './components/App';
 
 const store = configureStore({});
 
-const render = () => {
+const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>
         <ConnectedRouter history={history}>
-          {routes}
+          <Component/>
         </ConnectedRouter>
       </Provider>
     </AppContainer>,
@@ -26,10 +26,10 @@ const render = () => {
   );
 };
 
-render();
+render(App);
 
 if (module.hot) {
-  module.hot.accept('./routes', () => {
-    render(require('./routes').default);
+  module.hot.accept('./components/App', () => {
+    render(require('./components/App').default);
   });
 }
