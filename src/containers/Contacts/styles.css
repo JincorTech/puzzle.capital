@@ -1,10 +1,39 @@
 .container {
   width: 650px;
   margin: 0 auto;
+  padding: 45px 0;
 }
 
 .title {
   font-size: 35px;
   color: #ccc;
-  padding: 45px 0 30px;
+  padding: 0 0 30px;
+}
+
+.links {
+  width: 450px;
+  margin: 40px 0 0;
+}
+
+.link {
+  width: 225px;
+  margin: 15px 0;
+  display: inline-block;
+
+  & > h4 {
+    font-size: 18px;
+    margin: 0 0 4px;
+    display: block;
+    line-height: 21px;
+    font-weight: 300;
+    color: #ccc;
+  }
+
+  & > a {
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    line-height: 21px;
+    font-weight: normal;
+  }
 }
