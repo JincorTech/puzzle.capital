@@ -1,11 +1,7 @@
 .container {
-  width: 650px;
+  width: 500px;
   margin: 0 0 0 150px;
   padding: 45px 0;
-
-  @media only screen and (max-width: 1200px) {
-    margin: 0 auto;
-  }
 }
 
 .title {
@@ -14,12 +10,19 @@
   padding: 0 0 30px;
 }
 
-.links {
-  width: 450px;
-  margin: 40px 0 0;
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ccc;
+  margin: 20px 0 0;
 }
 
-.link {
+.managers {
+  width: 450px;
+  margin: 25px 0 0;
+}
+
+.manager {
   width: 225px;
   margin: 15px 0;
   display: inline-block;
@@ -28,16 +31,15 @@
     font-size: 18px;
     margin: 0 0 4px;
     display: block;
-    line-height: 21px;
     font-weight: 300;
     color: #ccc;
   }
 
-  & > a {
+  & > h5 {
     font-size: 14px;
     margin: 0;
     display: inline-block;
-    line-height: 21px;
     font-weight: normal;
+    color: #666;
   }
 }
