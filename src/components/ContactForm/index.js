@@ -1,7 +1,7 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 
-import { required, emailValidate } from '../../utils/validators';
+import { required } from '../../utils/validators';
 
 import RenderInput from '../forms/RenderInput';
 import RenderTextarea from '../forms/RenderTextarea';
@@ -42,7 +42,7 @@ const ContactForm = (props) => {
             placeholder="Email"
             label="Email"
             required={true}
-            validate={emailValidate}/>
+            validate={required}/>
         </div>
       </div>
 
