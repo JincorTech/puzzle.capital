@@ -14,10 +14,19 @@
       @media only screen and (max-width: 960px) {
         text-align: right;
       }
+
+      @media only screen and (max-width: 720px) {
+        display: none;
+      }
     }
 
     @media only screen and (max-width: 960px) {
       max-width: 170px;
+    }
+
+    @media only screen and (max-width: 720px) {
+      text-align: center;
+      margin: 0 auto;
     }
   }
 }
