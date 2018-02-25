@@ -39,4 +39,13 @@
   &:focus {
     color: #5fabe9;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {
+      color: #666;
+    }
+  }
 }
