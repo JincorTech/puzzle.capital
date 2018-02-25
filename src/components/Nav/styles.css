@@ -1,15 +1,43 @@
 .aside {
   padding: 30px 0;
+  position: relative;
 
   @media only screen and (max-width: 960px) {
     display: flex;
     align-items: center;
+  }
+
+  @media only screen and (max-width: 720px) {
+    justify-content: space-between;
+    padding: 15px 0;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    border-bottom: 1px solid #666;
+    flex-wrap: wrap;
   }
 }
 
 .logo {
   width: 60px;
   height: 60px;
+
+  & > img {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 720px) {
+    display: none;
+  }
+}
+
+.mobileLogo {
+  display: none;
+
+  @media only screen and (max-width: 720px) {
+    display: block;
+    width: 140px;
+    height: 25px;
+  }
 
   & > img {
     width: 100%;
@@ -21,6 +49,29 @@
 
   @media only screen and (max-width: 960px) {
     margin: 0 0 0 30px;
+  }
+
+  @media only screen and (max-width: 720px) {
+    display: none;
+  }
+}
+
+.mobileBurger {
+  display: none;
+
+  @media only screen and (max-width: 720px) {
+    display: block;
+    width: calc(100% - 140px);
+    text-align: right;
+  }
+}
+
+.dropdown {
+  display: none;
+
+  @media only screen and (max-width: 720px) {
+    display: block;
+    padding: 25px 0 10px;
   }
 }
 
@@ -44,9 +95,21 @@
     display: inline-block;
     margin: 0 12px;
   }
+
+  @media only screen and (max-width: 720px) {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ccc;
+    display: block;
+    margin: 10px 0;
+  }
 }
 
 .activeLink {
+  @media only screen and (max-width: 720px) {
+    color: #5fabe9;
+  }
+
   &::before {
     content: '';
     left: -10px;
@@ -60,6 +123,10 @@
       width: 100%;
       left: 0;
       bottom: -10px;
+    }
+
+    @media only screen and (max-width: 720px) {
+      display: none;
     }
   }
 }

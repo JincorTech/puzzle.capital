@@ -1,11 +1,21 @@
 .row {
   margin: 0 -20px 20px;
+
+  @media only screen and (max-width: 720px) {
+    margin: 0 0 20px;
+  }
 }
 
 .input {
-  width: 305px;
+  width: calc(50% - 40px);
   margin: 0 20px;
   display: inline-block;
+
+  @media only screen and (max-width: 720px) {
+    width: 100%;
+    display: block;
+    margin: 20px 0 0;
+  }
 }
 
 .buttonWrapper {
@@ -28,5 +38,14 @@
   &:hover,
   &:focus {
     color: #5fabe9;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {
+      color: #666;
+    }
   }
 }
