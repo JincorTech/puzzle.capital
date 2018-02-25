@@ -1,0 +1,53 @@
+.container {
+  width: 600px;
+  margin: 0 0 0 150px;
+  padding: 45px 0;
+}
+
+.title {
+  padding: 0 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ccc;
+    margin: 0;
+  }
+}
+
+.tabButtons {
+  & > button {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666;
+    padding: 6px 15px 4px;
+    margin: 0;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s linear all;
+
+    &:hover,
+    &:focus {
+      color: #5fabe9;
+    }
+
+    &.active {
+      border: 1px solid #ccc;
+      color: #ccc;
+    }
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ccc;
+  margin: 20px 0 0;
+}
