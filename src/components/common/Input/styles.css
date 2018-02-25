@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+  margin-bottom: 5px;
+
+  & > span {
+    color: #ed4853;
+    font-size: 16px;
+  }
+
+  &.invalid {
+    color: #ed4853;
+  }
+}
+
+.input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ccc;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 1px solid #666;
+  outline: none;
+  border-radius: 4px;
+  transition: 0.1s linear all;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #ccc;
+  }
+
+  &.invalid {
+    border: 1px solid #ed4853;
+  }
+}

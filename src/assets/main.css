@@ -17,3 +17,12 @@ body {
   color: #ccc;
   background-color: #222;
 }
+
+a {
+  color: #66bbff;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}

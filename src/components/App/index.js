@@ -8,7 +8,7 @@ import Footer from '../Footer';
 import About from '../About';
 import Strategy from '../Strategy';
 import Management from '../Management';
-import Contacts from '../Contacts';
+import Contacts from '../../containers/Contacts';
 import Legal from '../Legal';
 import E404 from '../errors/E404';
 
