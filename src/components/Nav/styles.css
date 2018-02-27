@@ -93,10 +93,13 @@
   text-decoration: none;
   transition: 0.1s linear all;
 
-  &:hover,
+  &:hover {
+    text-decoration: none;
+    color: #5fabe9;
+  }
+
   &:focus {
     text-decoration: none;
-    color: #666;
   }
 
   @media only screen and (max-width: 960px) {
@@ -114,7 +117,9 @@
 }
 
 .activeLink {
-  @media only screen and (max-width: 720px) {
+  color: #5fabe9;
+
+  &:hover {
     color: #5fabe9;
   }
 
@@ -124,7 +129,7 @@
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: #666;
+    background-color: #5fabe9;
 
     @media only screen and (max-width: 960px) {
       height: 2px;
