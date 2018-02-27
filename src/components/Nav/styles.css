@@ -93,10 +93,13 @@
   text-decoration: none;
   transition: 0.1s linear all;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: #666;
+  }
+
+  &:focus {
+    text-decoration: none;
   }
 
   @media only screen and (max-width: 960px) {
