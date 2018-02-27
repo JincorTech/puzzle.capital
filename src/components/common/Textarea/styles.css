@@ -35,11 +35,6 @@
   border-radius: 4px;
   transition: 0.1s linear all;
 
-  &:hover,
-  &:focus {
-    border: 1px solid #ccc;
-  }
-
   &.invalid {
     border: 1px solid #ed4853;
   }
