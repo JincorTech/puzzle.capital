@@ -28,7 +28,6 @@ const ContactForm = (props) => {
             component={RenderInput}
             name="name"
             type="text"
-            placeholder="Name"
             label="Full name"
             required={true}
             validate={required}/>
@@ -39,7 +38,6 @@ const ContactForm = (props) => {
             component={RenderInput}
             name="email"
             type="email"
-            placeholder="Email"
             label="Email"
             required={true}
             validate={emailValidate}/>
@@ -49,7 +47,6 @@ const ContactForm = (props) => {
       <Field
         component={RenderTextarea}
         name="message"
-        placeholder="Message"
         label="Message"
         required={true}
         validate={required}/>
