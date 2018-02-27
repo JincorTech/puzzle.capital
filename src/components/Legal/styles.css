@@ -40,10 +40,10 @@
   }
 
   & > button {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 15px;
     color: #666;
-    padding: 6px 15px 4px;
+    padding: 8px 15px;
     margin: 0;
     display: inline-block;
     background-color: transparent;
