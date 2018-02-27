@@ -14,12 +14,12 @@ const Textarea = (props) => {
 
   const {
     active,
-    visited,
-    invalid
+    invalid,
+    dirty
   } = meta;
 
   const isInvalid = () => {
-    if (!active && invalid && visited) return true;
+    if (!active && invalid && dirty) return true;
     if (!invalid) return false;
 
     return null;
