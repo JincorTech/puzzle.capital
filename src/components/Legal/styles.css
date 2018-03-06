@@ -35,8 +35,13 @@
 }
 
 .tabButtons {
+  position: relative;
+  top: 6px;
+
   @media only screen and (max-width: 720px) {
     margin: 0 -12px;
+    position: static;
+    top: auto;
   }
 
   & > button {

@@ -1,11 +1,15 @@
 import { all, takeEvery, call, put, fork } from 'redux-saga/effects';
-
+import { post } from '../utils/fetch';
 import { submitContactForm, changeStep } from '../redux/modules/contactForm';
 
 
 function* submitContactFormIterator({ payload }) {
-  yield call(console.log, payload);
-  yield put(changeStep('success'));
+  try {
+    yield call(post, '/api', payload);
+    yield put(changeStep('success'));
+  } catch (e) {
+    yield call(console.log, e);
+  }
 }
 
 function* submitContactFormSaga() {

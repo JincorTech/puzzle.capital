@@ -45,9 +45,9 @@ class Nav extends Component {
       <nav className={className}>
         {renderLink(namedRoutes.about, 'About')}
         {renderLink(namedRoutes.strategy, 'Strategy')}
-        {renderLink(namedRoutes.management, 'Management')}
+        {/* renderLink(namedRoutes.management, 'Management') */}
         {renderLink(namedRoutes.contacts, 'Contacts')}
-        {renderLink(namedRoutes.legal, 'Legal')}
+        {/* renderLink(namedRoutes.legal, 'Legal') */}
       </nav>
     );
 
